@@ -48,10 +48,6 @@ existing WSGI adapters for mod_python or CGI.
 %{__mv} %{buildroot}%{_libdir}/httpd/modules/{%{srcname},%{name}}.so
 
 
-%clean
-%{__rm} -rf %{buildroot}
-
-
 %files
 %defattr(-,root,root,-)
 %doc LICENCE README.rst
