@@ -11,7 +11,7 @@
 %{!?_httpd_mmn: %{expand: %%global _httpd_mmn %%(cat %{_includedir}/httpd/.mmn 2>/dev/null || echo 0-0)}}
 
 Name:           python%{iusver}-%{srcname}
-Version:        4.4.22
+Version:        4.5.1
 Release:        1.ius%{?dist}
 Summary:        A WSGI interface for Python web applications in Apache
 Vendor:         IUS Community Project
@@ -61,6 +61,9 @@ existing WSGI adapters for mod_python or CGI.
 
 
 %changelog
+* Mon Apr 11 2016 Carl George <carl.george@rackspace.com> - 4.5.1-1.ius
+- Latest upstream
+
 * Tue Jan 26 2016 Ben Harper <ben.harper@rackspace.com> - 4.4.22-1.ius
 - Latest upstream
 
