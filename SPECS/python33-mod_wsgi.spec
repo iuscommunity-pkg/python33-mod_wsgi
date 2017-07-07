@@ -9,7 +9,7 @@
 %{!?_httpd_moddir:    %{expand: %%global _httpd_moddir    %%{_libdir}/httpd/modules}}
 
 Name:           python%{iusver}-%{srcname}
-Version:        4.5.15
+Version:        4.5.17
 Release:        1.ius%{?dist}
 Summary:        A WSGI interface for Python web applications in Apache
 Vendor:         IUS Community Project
@@ -62,6 +62,9 @@ export CFLAGS="$RPM_OPT_FLAGS -fno-strict-aliasing"
 
 
 %changelog
+* Fri Jul 07 2017 Ben Harper <ben.harper@rackspace.com> - 4.5.17-1.ius
+- Latest upstream
+
 * Tue Mar 14 2017 Ben Harper <ben.harper@rackspace.com> - 4.5.15-1.ius
 - Latest upstream
 
